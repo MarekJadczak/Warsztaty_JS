@@ -11,10 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
     showMenuDOM.addEventListener('mouseout', function() {
         menuDOM.style.display = 'none'
     });
+    
+    
     var buttons = document.querySelectorAll('.read-more');
-    buttons[0].addEventListener('click', function() {
-      console.log('działa'); // To powinno pojawić się w konsoli po kliknięciu w pierwszy przycisk
+    
+     buttons[0].addEventListener('click', function() {
+      var textArea = this.previousElementSibling;
+      textArea.style.display = 'block';
+      this.innerHTML = 'MNIEJ <span class="glyphicon glyphicon-chevron-up"></span>';
     });
+        
+    
     
     // tutaj będziemy umieszczać kod ze wszystkich zadań
 });

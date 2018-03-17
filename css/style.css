@@ -304,3 +304,7 @@ footer p {
 .more {
     display: none;
 }
+.read-more {
+    dispaly: block;
+    
+}
